@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ComparaCombustível</string>
+    <string name="consumo_gasolina">12.5</string>"
+    <string name="consumo_etanol">9.0</string>
+    <string name="consumo_diesel">15.0</string>
+    <string name="combustivel_invalido">0.0</string>
+    <string name="combustivel_1">Combustível 1</string>
+    <string name="combustivel_2">Combustível 2</string>
+    <string name="campo_obrigatorio">Campo obrigatório!</string>
+    <string name="combustivel_mais_vantajoso">Combustível mais vantajoso: %s %s %s %s</string>
+    <string name="preco_combustivel_1">Combustível 1</string>
+    <string name="preco_combustivel_2">Combustível 2</string>
+    <string name="informe_consumo">Informe o consumo do combustível baseado em Km/L:</string>
+    <string name="informe_preco">Informe o preço praticado do combustível em R$/L:</string>
+</resources>

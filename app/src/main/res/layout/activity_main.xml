@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_consumo_combustivel_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/til_consumo_combustivel1"
+            app:layout_constraintStart_toStartOf="@+id/tv_consumo_combustivel"
+            app:layout_constraintTop_toBottomOf="@+id/tv_consumo_combustivel"
+            app:srcCompat="@drawable/ic_combustivel1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_consumo_combustivel1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/combustivel_1"
+            app:layout_constraintStart_toEndOf="@+id/icon_consumo_combustivel_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_consumo_combustivel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_consumo_combustivel_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/icon_consumo_combustivel_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/til_consumo_combustivel_2"
+            app:layout_constraintStart_toStartOf="@+id/icon_consumo_combustivel_1"
+            app:layout_constraintTop_toBottomOf="@+id/til_consumo_combustivel1"
+            app:srcCompat="@drawable/ic_combustivel2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_consumo_combustivel_2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/combustivel_2"
+            app:layout_constraintStart_toStartOf="@+id/til_consumo_combustivel1"
+            app:layout_constraintTop_toBottomOf="@+id/til_consumo_combustivel1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_consumo_combustivel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_consumo_combustivel"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/informe_consumo"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_preco_combustivel"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/informe_preco"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/icon_consumo_combustivel_2"
+            app:layout_constraintTop_toBottomOf="@+id/til_consumo_combustivel_2" />
+
+        <ImageView
+            android:id="@+id/icon_preco_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/til_preco_combustivel_1"
+            app:layout_constraintStart_toStartOf="@+id/tv_preco_combustivel"
+            app:layout_constraintTop_toBottomOf="@+id/tv_preco_combustivel"
+            app:srcCompat="@drawable/ic_preco1" />
+
+        <ImageButton
+            android:id="@+id/icon_button_buscar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/til_consumo_combustivel1"
+            app:layout_constraintStart_toEndOf="@+id/til_consumo_combustivel1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_consumo_combustivel"
+            app:srcCompat="@drawable/ic_buscar1" />
+
+        <ImageButton
+            android:id="@+id/icon_button_buscar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@+id/til_consumo_combustivel_2"
+            app:layout_constraintStart_toEndOf="@+id/til_consumo_combustivel_2"
+            app:layout_constraintTop_toBottomOf="@+id/til_consumo_combustivel1"
+            app:srcCompat="@drawable/ic_buscar2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_preco_combustivel_1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/preco_combustivel_1"
+            app:layout_constraintStart_toEndOf="@+id/icon_preco_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_preco_combustivel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_preco_combustivel_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/til_preco_combustivel_2"
+            app:layout_constraintStart_toStartOf="@+id/icon_preco_1"
+            app:layout_constraintTop_toBottomOf="@+id/til_preco_combustivel_1"
+            app:srcCompat="@drawable/ic_preco2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_preco_combustivel_2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/preco_combustivel_2"
+            app:layout_constraintStart_toStartOf="@+id/til_preco_combustivel_1"
+            app:layout_constraintTop_toBottomOf="@+id/til_preco_combustivel_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_preco_combustivel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Calcular"
+            app:layout_constraintStart_toStartOf="@+id/til_preco_combustivel_2"
+            app:layout_constraintTop_toBottomOf="@+id/til_preco_combustivel_2" />
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/combustivel_mais_vantajoso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+
+        <Button
+            android:id="@+id/btn_limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Limpar"
+            app:layout_constraintEnd_toEndOf="@+id/til_preco_combustivel_2"
+            app:layout_constraintTop_toBottomOf="@+id/til_preco_combustivel_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

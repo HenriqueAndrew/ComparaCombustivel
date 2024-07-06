@@ -174,6 +174,9 @@ class MainActivity : AppCompatActivity() {
             )
             Toast.makeText(this, "Sugestão para abastecimento: ${binding.tilConsumoCombustivel1.getHint()}", Toast.LENGTH_LONG).show()
         }
+        else {
+            Toast.makeText(this, "Sugestão para abastecimento: Tanto faz", Toast.LENGTH_LONG).show()
+        }
 
     }
 
